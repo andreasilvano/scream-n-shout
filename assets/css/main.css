@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: 'Px Grotesk Screen';
-  src: local('☺'), url('../font/Px%20Grotesk%Screen.woff2') format('woff2');
+  src: url('../font/Px%20Grotesk%Screen.woff2') format('woff2');
 }
 
 /* ########## DOM ########## */
