@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: 'Px Grotesk Screen';
-  src: local('☺'), url('../font/Px%20Grotesk%Screen.ttf') format('ttf');
+  src: local('☺'), url('../font/Px%20Grotesk%Screen.woff2') format('woff2');
 }
 
 /* ########## DOM ########## */
@@ -12,8 +12,6 @@ html {
   --color-main: #9437FF;
   --color-text-primary: white;
   --color-text-secondary: #FF0009;
-  --font-secondary: Messapia-Bold;
-  --font-text: "Inter", sans-serif;
   --font-light: 300;
   --font-reg: 400;
   --font-med: 500;
