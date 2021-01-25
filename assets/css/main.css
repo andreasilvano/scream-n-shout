@@ -32,12 +32,26 @@ a {
 
 .websiteMargin {}
 
-.uk-navbar-container {
-  background-color: #093AD6 !important;
-}
 
 .nav-logo {
-  width: 80%;
+  height: 80%;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+}
+.header {
+position: absolute;
+top: 0;
+width: 100%;
+height: 65px; /* Set the fixed height of the footer here */
+line-height: 65px; /* Vertically center the text there */
+color: white;
+background-color: #093AD6;
+text-align: center;
+font-family: 'Px Grotesk Screen';
+font-size: 1.5em;
+text-decoration: none;
 }
 
 .footer {
@@ -60,6 +74,14 @@ color: inherit;
 a:hover {
   text-decoration: none;
   color: white;
+}
+
+.provocation {
+  text-align: center;
+  font-family: 'Px Grotesk Screen';
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #093AD6;
 }
 
 /* iphone */
