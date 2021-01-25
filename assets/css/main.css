@@ -29,17 +29,45 @@ footer {}
 a {
   text-decoration: none;
 }
+p {
+  font-family: 'Px Grotesk Screen';
+  font-size: 0.8em;
+  color: #093AD6;
+}
 
-.websiteMargin {}
+h1 {
+  font-family: 'Px Grotesk Screen';
+  font-size: 1.8em;
+  color: #093AD6;
+}
 
+h2 {
+  font-family: 'Px Grotesk Screen';
+  font-size: 1.5em;
+  color: #093AD6;
+}
+
+h3 {
+  font-family: 'Px Grotesk Screen';
+  font-size: 1em;
+  color: #093AD6;
+}
+.websiteMargin {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.paragraph-margin {
+  margin-left: 40px;
+  padding-right: 100px;
+}
 
 .nav-logo {
   height: 80%;
   padding-top: 10px;
   padding-left: 30px;
   padding-right: 30px;
-
 }
+
 .header {
 position: absolute;
 top: 0;
@@ -78,10 +106,6 @@ a:hover {
 
 .provocation {
   text-align: center;
-  font-family: 'Px Grotesk Screen';
-  font-size: 1.5em;
-  text-decoration: none;
-  color: #093AD6;
 }
 
 /* iphone */
