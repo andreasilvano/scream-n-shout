@@ -32,12 +32,31 @@
 
   <section class="mt-5 pt-5 pb-5 d-flex justify-content-center">
 
-      <div class="row">
-        <div class="col-12 d-flex justify-content-center mt-3 provocation">
-          <h1>Our mobile devices, they just let it all out!</h1>
-        </div>
+    <div class="row">
+      <div class="col-12 d-flex justify-content-center mt-3 provocation">
+        <h1>Our mobile devices, they just let it all out!</h1>
+      </div>
   </section>
 
+  <section class="mt-5 pt-5 pb-5 d-flex justify-content-center">
+    <a href="#" id="change">click</a>
+
+    <!-- <video autoplay="true" muted="true" controls id="video">
+      <source src="https://www.html5rocks.com/en/tutorials/video/basics/devstories.mp4"id="source">
+    </video> -->
+    <video id="vid1" class="vid" src="http://html5demos.com/assets/dizzy.mp4" controls autoplay></video>
+
+      <script>
+        var vid = document.getElementById('vid1');
+        vid.addEventListener('ended', function(e) {
+        vid.removeAttribute("src");
+        vid.setAttribute('src','https://www.html5rocks.com/en/tutorials/video/basics/devstories.mp4')
+        }, false);
+      </script>
+
+
+  </section>
+<br><br><br>
   <section>
     <div class="footer">
       <a href="about.html"><span>ABOUT</span></a>
@@ -46,6 +65,13 @@
 
   <!-- JavaScript-->
   <!-- UIkit JS -->
+  <!-- <script>
+    const vid = document.getElementById('source');
+vid.addEventListener('ended', function() {
+  alert("The video has ended");
+})
+  </script> -->
+
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.5/dist/js/uikit.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.5/dist/js/uikit-icons.min.js"></script>
 

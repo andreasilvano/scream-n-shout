@@ -108,6 +108,10 @@ a:hover {
   text-align: center;
 }
 
+#video {
+
+width: 50%;
+}
 /* iphone */
 @media only screen and (max-width: 414px) {
   .websiteMargin {
