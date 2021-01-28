@@ -109,13 +109,37 @@ a:hover {
 }
 
 .video {
-
 width: 15%;
+position: relative;
+left: 400px;
+}
+.generic_button{
+  color: #093AD6;
+  background-color: white;
+  text-align: center;
+  font-family: 'Px Grotesk Screen';
+  font-size: 1.5em;
+  text-decoration: none;
+  border-color: #093AD6;
+  border-style: 2px;
+  position: relative;
+  left: 560px;
+  bottom: 190px;
 }
 /* iphone */
 @media only screen and (max-width: 414px) {
   .websiteMargin {
     margin-left: auto;
     margin-right: auto;
+  }
+  .video {
+    z-index: 0;
+    width: 60%;
+    position: relative;
+    left: -50px;
+  }
+  .generic_button {
+    z-index: 999;
+    left: 125px;
   }
 }
