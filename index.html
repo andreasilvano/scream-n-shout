@@ -33,44 +33,53 @@
   <section class="mt-5 pt-5 pb-5 d-flex justify-content-center">
 
     <div class="row">
-      <div class="col-12 d-flex justify-content-center mt-3 provocation">
+      <div class="col-12 d-flex justify-content-center provocation">
         <h1>Our mobile devices, they just let it all out!</h1>
       </div>
   </section>
 
-  <section class="mt-5 pt-5 pb-5 d-flex justify-content-center">
-    <a href="#" id="change">click</a>
+  <section class="d-flex justify-content-center">
+    <button onclick="play1()">Click me</button>
 
-    <!-- <video autoplay="true" muted="true" controls id="video">
-      <source src="https://www.html5rocks.com/en/tutorials/video/basics/devstories.mp4"id="source">
-    </video> -->
-    <video id="vid1" class="vid" src="http://html5demos.com/assets/dizzy.mp4" controls autoplay></video>
-
-      <script>
-        var vid = document.getElementById('vid1');
-        vid.addEventListener('ended', function(e) {
-        vid.removeAttribute("src");
-        vid.setAttribute('src','https://www.html5rocks.com/en/tutorials/video/basics/devstories.mp4')
-        }, false);
-      </script>
-
-
+    <video id="vid1" src="http://html5demos.com/assets/dizzy.mp4" loop controls muted autoplay></video>
   </section>
-<br><br><br>
+
+
   <section>
     <div class="footer">
       <a href="about.html"><span>ABOUT</span></a>
     </div>
   </section>
 
-  <!-- JavaScript-->
-  <!-- UIkit JS -->
-  <!-- <script>
-    const vid = document.getElementById('source');
-vid.addEventListener('ended', function() {
-  alert("The video has ended");
-})
-  </script> -->
+<!-- SCRPIT FUNCTION FOR VIDEO PLAYBACK -->
+  <script>
+  var vid = document.getElementById('vid1');
+
+function unmute(){
+  if(vid.muted){
+  vid.muted = false;
+} else {
+  vid.muted = true;
+}};
+
+  function play1(){
+    vid.removeAttribute("src");
+    vid.setAttribute("src",'https://www.html5rocks.com/en/tutorials/video/basics/devstories.mp4');
+    goback1();
+  };
+
+  function goback1(){
+  vid.removeAttribute("loop");
+  vid.removeAttribute("muted");
+  unmute();
+  vid.onended = function() {
+  vid.removeAttribute("src");
+  vid.setAttribute("src",'http://html5demos.com/assets/dizzy.mp4',);
+
+}};
+  </script>
+
+<!-- ALL OTHER JS SHIT -->
 
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.5/dist/js/uikit.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.5/dist/js/uikit-icons.min.js"></script>
