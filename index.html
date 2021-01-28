@@ -41,7 +41,7 @@
   <section class="d-flex justify-content-center">
     <button onclick="play1()">Click me</button>
 
-    <video id="vid1" src="http://html5demos.com/assets/dizzy.mp4" playsinline loop muted autoplay></video>
+    <video id="vid1" class="video" src="assets/video/manfro1.mp4" playsinline loop muted autoplay></video>
   </section>
 
 
@@ -64,7 +64,7 @@ function unmute(){
 
   function play1(){
     vid.removeAttribute("src");
-    vid.setAttribute("src",'https://www.html5rocks.com/en/tutorials/video/basics/devstories.mp4');
+    vid.setAttribute("src",'assets/video/muna1.mp4');
     goback1();
   };
 
@@ -74,7 +74,7 @@ function unmute(){
   unmute();
   vid.onended = function() {
   vid.removeAttribute("src");
-  vid.setAttribute("src",'http://html5demos.com/assets/dizzy.mp4',);
+  vid.setAttribute("src",'assets/video/manfro1.mp4',);
 
 }};
   </script>
