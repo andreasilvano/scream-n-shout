@@ -136,10 +136,11 @@ left: 400px;
     z-index: 0;
     width: 60%;
     position: relative;
-    left: 150px;
+    left: 50px;
   }
   .generic_button {
     z-index: 999;
     left: 125px;
+    bottom: 200px;
   }
 }
