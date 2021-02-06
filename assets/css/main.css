@@ -6,7 +6,23 @@
   font-family: 'Px Grotesk Screen';
   src: url('../font/Px-Grotesk-Screen.woff2') format('woff2');
 }
+@font-face {
+  font-family: 'Px Grotesk Regular';
+  src: url('../font/Px-Grotesk-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Px Grotesk Light';
+  src: url('../font/Px-Grotesk-Light.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Px Grotesk Bold';
+  src: url('../font/Px-Grotesk-Bold.woff2') format('woff2');
+  font-weight: bold;
+}
 
+strong {
+  font-family: 'Px Grotesk Bold';
+}
 /* ########## DOM ########## */
 html {
   --color-main: #9437FF;
@@ -30,9 +46,17 @@ a {
   text-decoration: none;
 }
 p {
-  font-family: 'Px Grotesk Screen';
-  font-size: 0.8em;
+  font-family: 'Px Grotesk Light';
+  font-size: 1em;
   color: #093AD6;
+}
+ul {
+  font-family: 'Px Grotesk Light';
+  font-size: 1em;
+  color: #093AD6;
+  padding-left: 0px; !important
+  padding-top: 0px; !important
+  padding-bottom: 0px; !important
 }
 
 h1 {
@@ -48,17 +72,13 @@ h2 {
 }
 
 h3 {
-  font-family: 'Px Grotesk Screen';
+  font-family: 'Px Grotesk Bold';
   font-size: 1em;
   color: #093AD6;
 }
 .websiteMargin {
-  margin-left: 100px;
-  margin-right: 100px;
-}
-.paragraph-margin {
-  margin-left: 40px;
-  padding-right: 100px;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 
 .nav-logo {
@@ -95,6 +115,20 @@ font-family: 'Px Grotesk Screen';
 font-size: 1.5em;
 text-decoration: none;
 }
+
+.footer_about {
+position: relative;
+bottom: 0;
+width: 100%;
+height: 50px; /* Set the fixed height of the footer here */
+line-height: 50px; /* Vertically center the text there */
+color: white;
+background-color: #093AD6;
+text-align: center;
+font-family: 'Px Grotesk Screen';
+font-size: 1em;
+text-decoration: none;
+}
 .uk-link,a {
 text-decoration: none;
 color: inherit;
@@ -107,12 +141,10 @@ a:hover {
 .provocation {
   text-align: center;
 }
-
-.video {
-width: 15%;
-position: relative;
-left: 400px;
+.video{
+  width: 15%;
 }
+
 .generic_button{
   color: #093AD6;
   background-color: white;
@@ -122,26 +154,24 @@ left: 400px;
   text-decoration: none;
   border-color: #093AD6;
   border-style: 2px;
-  position: relative;
-  left: 560px;
-  bottom: 190px;
 }
 /* iphone */
 @media only screen and (max-width: 414px) {
   .websiteMargin {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 25px;
+    margin-right: 25px;
   }
-  .video {
-    z-index: 0;
-    width: 60%;
-    position: relative;
-    left: 70px;
-    bottom: 70px;
+.video{
+  width: 30%;
+}
+}
+/* small-screen */
+@media only screen and (min-width: 415px) and (max-width: 800px) {
+  .websiteMargin {
+    margin-left: 50px;
+    margin-right: 25px;
   }
-  .generic_button {
-    z-index: 999;
-    left: 125px;
-    bottom: 50px;
-  }
+.video{
+  width: 30%;
+}
 }

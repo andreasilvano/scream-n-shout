@@ -30,7 +30,7 @@
     </div>
   </section>
 
-  <section class="mt-5 pt-5 pb-5 d-flex justify-content-center">
+  <section class="mt-5 pt-5 d-flex justify-content-center">
 
     <div class="row">
       <div class="col-12 d-flex justify-content-center provocation">
@@ -39,8 +39,17 @@
   </section>
 
   <section class="">
-    <button class="generic_button" onclick="play1()">CHECK IT</button>
+    <div class="row">
+      <div class="col-12 d-flex justify-content-center">
+    <button class="generic_button mt-2 mb-2" onclick="play1()">CHECK IT</button>
+  </div>
+    </div>
+    <div class="row">
+      <div class="col-12 d-flex justify-content-center">
     <video id="vid1" class="video" src="assets/video/manfro1.mp4" playsinline loop muted autoplay></video>
+
+</div>
+</div>
   </section>
 
 
@@ -50,35 +59,7 @@
     </div>
   </section>
 
-<!-- SCRPIT FUNCTION FOR VIDEO PLAYBACK -->
-  <script>
-  var vid = document.getElementById('vid1');
-
-function unmute(){
-  if(vid.muted){
-  vid.muted = false;
-} else {
-  vid.muted = true;
-}};
-
-  function play1(){
-    vid.removeAttribute("src");
-    vid.setAttribute("src",'assets/video/muna1.mp4');
-    goback1();
-  };
-
-  function goback1(){
-  vid.removeAttribute("loop");
-  vid.removeAttribute("muted");
-  unmute();
-  vid.onended = function() {
-  vid.removeAttribute("src");
-  vid.setAttribute("src",'assets/video/manfro1.mp4',);
-
-}};
-  </script>
-
-<!-- ALL OTHER JS SHIT -->
+<!-- JS SHIT -->
 
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.5/dist/js/uikit.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.5/dist/js/uikit-icons.min.js"></script>
