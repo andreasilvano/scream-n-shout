@@ -8,10 +8,16 @@ function unmute(){
   vid.muted = true;
 }};
 
+function clear() {
+  vid.setAttribute("loop");
+  vid.setAttribute("muted");
+}
+
   function play1(){
     vid.removeAttribute("src");
-    vid.setAttribute("src",'assets/video/muna1.mp4');
+    vid.setAttribute("src",'assets/video/numerodue.mp4');
     goback1();
+
   };
 
   function goback1(){
@@ -20,7 +26,6 @@ function unmute(){
   unmute();
   vid.onended = function() {
   vid.removeAttribute("src");
-  vid.setAttribute("src",'assets/video/manfro1.mp4',);
+  vid.setAttribute("src",'assets/video/numerouno.mp4',);
 
 }};
-  
