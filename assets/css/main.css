@@ -169,7 +169,8 @@ a:hover {
     margin-right: 25px;
   }
 .video{
-  width: 30%;
+  width: 25%;
+  margin-top: -50px;
 }
 }
 /* small-screen */
