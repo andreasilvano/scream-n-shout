@@ -158,6 +158,10 @@ a:hover {
   border-color: #093AD6;
   border-style: 2px;
 }
+.responsive {
+  width: 100%;
+  height: auto;
+}
 /* iphone */
 @media only screen and (max-width: 414px) {
   .websiteMargin {
