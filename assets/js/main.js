@@ -37,7 +37,7 @@ function unmute(){
   unmute();
   vid.onended = function() {
   vid.removeAttribute("src");
-  vid.setAttribute("src",'assets/video/00.webM',);
+  vid.setAttribute("src",'assets/video/00.mp4',);
 
 }};
 function goback2(){
@@ -46,7 +46,7 @@ vid.removeAttribute("muted");
 unmute();
 vid.onended = function() {
 vid.removeAttribute("src");
-vid.setAttribute("src",'assets/video/00.webM',);
+vid.setAttribute("src",'assets/video/00.mp4',);
 
 }};
 
@@ -56,7 +56,7 @@ vid.removeAttribute("muted");
 unmute();
 vid.onended = function() {
 vid.removeAttribute("src");
-vid.setAttribute("src",'assets/video/00.webM',);
+vid.setAttribute("src",'assets/video/00.mp4',);
 
 }};
 
@@ -66,6 +66,6 @@ vid.removeAttribute("muted");
 unmute();
 vid.onended = function() {
 vid.removeAttribute("src");
-vid.setAttribute("src",'assets/video/00.webM',);
+vid.setAttribute("src",'assets/video/00.mp4',);
 
 }};
