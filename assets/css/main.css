@@ -250,23 +250,7 @@ a:hover {
     left: 8;
     right: 0;
   }
-
-  /* small-screen */
-  @media only screen and (min-width: 800px) and (max-width: 1250px) {
-    .websiteMargin {
-      margin-left: 40px;
-      margin-right: 40px;
-    }
-
-    .pulsating-circle-1 {
-      display: none;
-    }
-
-    .pulsating-circle-4 {
-      display: none;
-    }
-  }
-
+}
   @media only screen and (min-width: 414px) and (max-width: 800px) {
     .websiteMargin {
       margin-left: 30px;
@@ -283,6 +267,21 @@ a:hover {
 
     .pulsating-circle-3 {
       left: 70%;
+    }
+
+    .pulsating-circle-4 {
+      display: none;
+    }
+  }
+  /* small-screen */
+  @media only screen and (min-width: 800px) and (max-width: 1250px) {
+    .websiteMargin {
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+
+    .pulsating-circle-1 {
+      display: none;
     }
 
     .pulsating-circle-4 {
