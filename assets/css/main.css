@@ -205,11 +205,6 @@ a:hover {
   border-style: 2px;
 }
 
-.uk-margin-left {
-  margin-left: 300px;
-   !important
-}
-
 /* iphone */
 @media only screen and (max-width: 414px) {
   .websiteMargin {
@@ -245,11 +240,6 @@ a:hover {
     margin-top: 4rem !important;
   }
 
-  .uk-position-top {
-    top: 0;
-    left: 8;
-    right: 0;
-  }
 }
   @media only screen and (min-width: 414px) and (max-width: 800px) {
     .websiteMargin {
