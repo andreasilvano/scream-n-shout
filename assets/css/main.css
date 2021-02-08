@@ -127,7 +127,9 @@ h3 {
 .provocation {
   text-align: center;
 }
-
+.about-top{
+  margin-top: 11px;
+}
 .nav-logo {
   height: 70%;
   padding-left: 30px;
