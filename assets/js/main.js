@@ -15,7 +15,7 @@ function clear() {
 
   function play1(){
     vid.removeAttribute("src");
-    vid.setAttribute("src",'assets/video/numerodue.mp4');
+    vid.setAttribute("src",'assets/video/2.mp4');
     goback1();
 
   };
@@ -26,6 +26,6 @@ function clear() {
   unmute();
   vid.onended = function() {
   vid.removeAttribute("src");
-  vid.setAttribute("src",'assets/video/numerouno.mp4',);
+  vid.setAttribute("src",'assets/video/LOOP1.mp4',);
 
 }};
