@@ -6,14 +6,17 @@
   font-family: 'Px Grotesk Screen';
   src: url('../font/Px-Grotesk-Screen.woff2') format('woff2');
 }
+
 @font-face {
   font-family: 'Px Grotesk Regular';
   src: url('../font/Px-Grotesk-Regular.woff2') format('woff2');
 }
+
 @font-face {
   font-family: 'Px Grotesk Light';
   src: url('../font/Px-Grotesk-Light.woff2') format('woff2');
 }
+
 @font-face {
   font-family: 'Px Grotesk Bold';
   src: url('../font/Px-Grotesk-Bold.woff2') format('woff2');
@@ -23,6 +26,7 @@
 strong {
   font-family: 'Px Grotesk Bold';
 }
+
 /* ########## DOM ########## */
 html {
   --color-main: #9437FF;
@@ -45,18 +49,20 @@ footer {}
 a {
   text-decoration: none;
 }
+
 p {
   font-family: 'Px Grotesk Light';
   font-size: 1em;
   color: #093AD6;
 }
+
 ul {
   font-family: 'Px Grotesk Light';
-  padding-left: -0px; !important
-  font-size: 1em;
+  padding-left: -0px;
+   !important font-size: 1em;
   color: #093AD6;
-  margin-top: -20px; !important
-
+  margin-top: -20px;
+   !important
 }
 
 h1 {
@@ -84,6 +90,7 @@ h3 {
   top: 75%;
   transform: translateX(-50%) translateY(-50%);
 }
+
 .pulsating-circle-2 {
   cursor: pointer;
   position: fixed;
@@ -107,9 +114,11 @@ h3 {
   top: 70%;
   transform: translateX(-50%) translateY(-50%);
 }
-.link{
+
+.link {
   text-decoration: underline;
 }
+
 .websiteMargin {
   margin-left: 80px;
   margin-right: 80px;
@@ -118,6 +127,7 @@ h3 {
 .provocation {
   text-align: center;
 }
+
 .nav-logo {
   height: 80%;
   padding-top: 10px;
@@ -126,57 +136,65 @@ h3 {
 }
 
 .header {
-position: absolute;
-z-index: 2;
-top: 0;
-width: 100%;
-height: 65px; /* Set the fixed height of the footer here */
-line-height: 65px; /* Vertically center the text there */
-color: white;
-background-color: #093AD6;
-text-align: center;
-font-family: 'Px Grotesk Screen';
-font-size: 1.5em;
-text-decoration: none;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  width: 100%;
+  height: 65px;
+  /* Set the fixed height of the footer here */
+  line-height: 65px;
+  /* Vertically center the text there */
+  color: white;
+  background-color: #093AD6;
+  text-align: center;
+  font-family: 'Px Grotesk Screen';
+  font-size: 1.5em;
+  text-decoration: none;
 }
 
 .footer {
-position: absolute;
-bottom: 0;
-width: 100%;
-height: 50px; /* Set the fixed height of the footer here */
-line-height: 50px; /* Vertically center the text there */
-color: white;
-background-color: #093AD6;
-text-align: center;
-font-family: 'Px Grotesk Screen';
-font-size: 1.5em;
-text-decoration: none;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  /* Set the fixed height of the footer here */
+  line-height: 50px;
+  /* Vertically center the text there */
+  color: white;
+  background-color: #093AD6;
+  text-align: center;
+  font-family: 'Px Grotesk Screen';
+  font-size: 1.5em;
+  text-decoration: none;
 }
 
 .footer_about {
-position: relative;
-bottom: 0;
-width: 100%;
-height: 50px; /* Set the fixed height of the footer here */
-line-height: 50px; /* Vertically center the text there */
-color: white;
-background-color: #093AD6;
-text-align: center;
-font-family: 'Px Grotesk Screen';
-font-size: 1em;
-text-decoration: none;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  /* Set the fixed height of the footer here */
+  line-height: 50px;
+  /* Vertically center the text there */
+  color: white;
+  background-color: #093AD6;
+  text-align: center;
+  font-family: 'Px Grotesk Screen';
+  font-size: 1em;
+  text-decoration: none;
 }
-.uk-link,a {
-text-decoration: none;
-color: inherit;
+
+.uk-link, a {
+  text-decoration: none;
+  color: inherit;
 }
+
 a:hover {
   background-color: #093AD6;
   color: white;
 }
 
-.generic_button{
+.generic_button {
   color: #093AD6;
   background-color: white;
   text-align: center;
@@ -186,10 +204,11 @@ a:hover {
   border-color: #093AD6;
   border-style: 2px;
 }
-.uk-margin-left{
-  margin-left: 300px;!important
-}
 
+.uk-margin-left {
+  margin-left: 300px;
+   !important
+}
 
 /* iphone */
 @media only screen and (max-width: 414px) {
@@ -197,65 +216,76 @@ a:hover {
     margin-left: 25px;
     margin-right: 25px;
   }
-  .pulsating-circle-1{
-    display: none;
-  }
-  .pulsating-circle-4{
-    display: none;
-  }
-  .pulsating-circle-2{
 
+  .pulsating-circle-1 {
+    display: none;
+  }
+
+  .pulsating-circle-4 {
+    display: none;
+  }
+
+  .pulsating-circle-2 {
     left: 25%;
   }
-  .pulsating-circle-3{
 
+  .pulsating-circle-3 {
     left: 70%;
   }
+
   .uk-cover {
     max-width: 1040;
     position: absolute;
     left: 50%;
     top: 60%;
-    transform: translate(-50%,-50%);
-}
-.mt-5 {
-    margin-top: 4rem!important;
-}
-.uk-position-top {
+    transform: translate(-50%, -50%);
+  }
+
+  .mt-5 {
+    margin-top: 4rem !important;
+  }
+
+  .uk-position-top {
     top: 0;
     left: 8;
-    right: 0;}
-/* small-screen */
-@media only screen and (min-width: 800px) and (max-width: 1250px) {
-  .websiteMargin {
-    margin-left: 40px;
-    margin-right: 40px;
+    right: 0;
   }
-.pulsating-circle-1{
-  display: none;
-}
-.pulsating-circle-4{
-  display: none;
-}
-}
 
-@media only screen and (min-width: 414px) and (max-width: 800px) {
-  .websiteMargin {
-    margin-left: 30px;
-    margin-right: 30px;
+  /* small-screen */
+  @media only screen and (min-width: 800px) and (max-width: 1250px) {
+    .websiteMargin {
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+
+    .pulsating-circle-1 {
+      display: none;
+    }
+
+    .pulsating-circle-4 {
+      display: none;
+    }
   }
-.pulsating-circle-1{
-  display: none;
-}
-.pulsating-circle-2{
 
-  left: 25%;
-}
-.pulsating-circle-3{
+  @media only screen and (min-width: 414px) and (max-width: 800px) {
+    .websiteMargin {
+      margin-left: 30px;
+      margin-right: 30px;
+    }
 
-  left: 70%;
-}
-.pulsating-circle-4{
-  display: none;
-}
-}
+    .pulsating-circle-1 {
+      display: none;
+    }
+
+    .pulsating-circle-2 {
+      left: 25%;
+    }
+
+    .pulsating-circle-3 {
+      left: 70%;
+    }
+
+    .pulsating-circle-4 {
+      display: none;
+    }
+  }
