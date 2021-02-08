@@ -1,22 +1,33 @@
 
-  var vid = document.getElementById('vid1');
+  var vid = document.getElementById('vid');
 
 function unmute(){
   if(vid.muted){
   vid.muted = false;
-} else {
-  vid.muted = true;
 }};
-
-function clear() {
-  vid.setAttribute("loop");
-  vid.setAttribute("muted");
-}
 
   function play1(){
     vid.removeAttribute("src");
-    vid.setAttribute("src",'assets/video/2.mp4');
+    vid.setAttribute("src",'assets/video/01.mp4');
     goback1();
+
+  };
+  function play2(){
+    vid.removeAttribute("src");
+    vid.setAttribute("src",'assets/video/02.mp4');
+    goback2();
+
+  };
+  function play3(){
+    vid.removeAttribute("src");
+    vid.setAttribute("src",'assets/video/03.mp4');
+    goback3();
+
+  };
+  function play4(){
+    vid.removeAttribute("src");
+    vid.setAttribute("src",'assets/video/04.mp4');
+    goback3();
 
   };
 
@@ -26,6 +37,35 @@ function clear() {
   unmute();
   vid.onended = function() {
   vid.removeAttribute("src");
-  vid.setAttribute("src",'assets/video/LOOP1.mp4',);
+  vid.setAttribute("src",'assets/video/00.mp4',);
+
+}};
+function goback2(){
+vid.removeAttribute("loop");
+vid.removeAttribute("muted");
+unmute();
+vid.onended = function() {
+vid.removeAttribute("src");
+vid.setAttribute("src",'assets/video/00.mp4',);
+
+}};
+
+function goback3(){
+vid.removeAttribute("loop");
+vid.removeAttribute("muted");
+unmute();
+vid.onended = function() {
+vid.removeAttribute("src");
+vid.setAttribute("src",'assets/video/00.mp4',);
+
+}};
+
+function goback4(){
+vid.removeAttribute("loop");
+vid.removeAttribute("muted");
+unmute();
+vid.onended = function() {
+vid.removeAttribute("src");
+vid.setAttribute("src",'assets/video/00.mp4',);
 
 }};

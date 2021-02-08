@@ -61,7 +61,7 @@ ul {
 
 h1 {
   font-family: 'Px Grotesk Screen';
-  font-size: 1.8em;
+  font-size: 1.9em;
   color: #093AD6;
 }
 
@@ -76,6 +76,37 @@ h3 {
   font-size: 1em;
   color: #093AD6;
 }
+
+.pulsating-circle-1 {
+  cursor: pointer;
+  position: fixed;
+  left: 15%;
+  top: 75%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.pulsating-circle-2 {
+  cursor: pointer;
+  position: fixed;
+  left: 38%;
+  top: 65%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.pulsating-circle-3 {
+  cursor: pointer;
+  position: fixed;
+  left: 60%;
+  top: 70%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.pulsating-circle-4 {
+  cursor: pointer;
+  position: fixed;
+  left: 85%;
+  top: 70%;
+  transform: translateX(-50%) translateY(-50%);
+}
 .link{
   text-decoration: underline;
 }
@@ -84,6 +115,9 @@ h3 {
   margin-right: 80px;
 }
 
+.provocation {
+  text-align: center;
+}
 .nav-logo {
   height: 80%;
   padding-top: 10px;
@@ -142,13 +176,6 @@ a:hover {
   color: white;
 }
 
-.provocation {
-  text-align: center;
-}
-.video{
-  width: 15%;
-}
-
 .generic_button{
   color: #093AD6;
   background-color: white;
@@ -159,28 +186,72 @@ a:hover {
   border-color: #093AD6;
   border-style: 2px;
 }
-.responsive {
-  width: 100%;
-  height: auto;
+.uk-margin-left{
+  margin-left: 300px;!important
 }
+
+
 /* iphone */
 @media only screen and (max-width: 414px) {
   .websiteMargin {
     margin-left: 25px;
     margin-right: 25px;
   }
-.video{
-  width: 40%;
-  margin-top: -300px;
+  .pulsating-circle-1{
+    display: none;
+  }
+  .pulsating-circle-4{
+    display: none;
+  }
+  .pulsating-circle-2{
+
+    left: 25%;
+  }
+  .pulsating-circle-3{
+
+    left: 70%;
+  }
+  .uk-cover {
+    max-width: 1040;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%,-50%);
 }
+.mt-5 {
+    margin-top: 5rem!important;
 }
 /* small-screen */
-@media only screen and (min-width: 415px) and (max-width: 800px) {
+@media only screen and (min-width: 800px) and (max-width: 1250px) {
   .websiteMargin {
-    margin-left: 50px;
-    margin-right: 25px;
+    margin-left: 40px;
+    margin-right: 40px;
   }
-.video{
-  width: 30%;
+.pulsating-circle-1{
+  display: none;
+}
+.pulsating-circle-4{
+  display: none;
+}
+}
+
+@media only screen and (min-width: 414px) and (max-width: 800px) {
+  .websiteMargin {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+.pulsating-circle-1{
+  display: none;
+}
+.pulsating-circle-2{
+
+  left: 25%;
+}
+.pulsating-circle-3{
+
+  left: 70%;
+}
+.pulsating-circle-4{
+  display: none;
 }
 }
