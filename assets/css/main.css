@@ -270,7 +270,7 @@ a:hover {
       display: none;
     }
   }
-  /* small-screen */
+  /* middle-screen */
   @media only screen and (min-width: 800px) and (max-width: 1000px){
     .websiteMargin {
       margin-left: 40px;
@@ -285,6 +285,12 @@ a:hover {
       display: none;
     }
     .collected-info-desktop{
+      display: none;
+    }
+  }
+  /* middle-screen */
+  @media only screen and (min-width: 1000px) {
+    .collected-info-mobile{
       display: none;
     }
   }
