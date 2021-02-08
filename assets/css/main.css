@@ -67,7 +67,7 @@ ul {
 
 h1 {
   font-family: 'Px Grotesk Screen';
-  font-size: 1.9em;
+  font-size: 2em;
   color: #093AD6;
 }
 
@@ -129,8 +129,7 @@ h3 {
 }
 
 .nav-logo {
-  height: 80%;
-  padding-top: 10px;
+  height: 70%;
   padding-left: 30px;
   padding-right: 30px;
 }
